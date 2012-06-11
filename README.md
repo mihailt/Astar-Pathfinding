@@ -1,8 +1,9 @@
 Astar-Pathfinding
 =================
 
-example usage:
+## Usage:
 
+```objective-c
 int cols = 8;
 int rows = 8;
 AStar * pathFinder = [[AStar alloc] initWithGrid:[[AStarGrid alloc] initWithCols:cols andRows:rows]];
@@ -16,8 +17,9 @@ if ([pathFinder findPath]) {
 } else {
 	// no path to end node
 }
+```
 
-
+## Additional info
 some configuration settings are in AStarConstants.h
 and default heruistic type is set to Eclidian in Astar.m initWithGrid method
 
